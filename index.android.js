@@ -7,7 +7,9 @@ import ReduxThunk from 'redux-thunk';
 import rootReducer from './App/reducers';
 import {createLogger}  from 'redux-logger'
 import Header from './App/components/Header';
-import Details from './App/containers/Contents/tags';
+import Details from './App/containers/tags';
+import News from './App/containers/news';
+
 const logger = createLogger({
     //empty options
 });
@@ -20,6 +22,7 @@ export default class App extends Component{
         <View>
           <Header/>
           <Details/>
+          <News/>
         </View>
       </Provider>
     );

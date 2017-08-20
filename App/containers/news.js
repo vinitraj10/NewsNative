@@ -1,6 +1,6 @@
 import React,{Component} from 'react';
 import {View,Text,StyleSheet} from 'react-native';
-import SingleNews from '../../../components/SingleNews';
+import SingleNews from '../components/SingleNews';
 import {connect} from 'react-redux';
 
 class News extends Component{

@@ -2,9 +2,9 @@ import React,{Component} from 'react';
 import {View,StyleSheet,Text} from 'react-native';
 import {connect} from 'react-redux';
 import {bindActionCreators} from 'redux';
-import * as actions from '../../actions';
-import Section from '../../components/Section';
-import Button from '../../components/Button';
+import * as actions from '../actions';
+import Section from '../components/Section';
+import Button from '../components/Button';
 
 class Details extends Component{
 	render(){
