@@ -4,12 +4,29 @@ import SingleNews from '../components/SingleNews';
 import {connect} from 'react-redux';
 
 class News extends Component{
+	constructor(props) {
+		super(props);
+		this.checkNews = this.checkNews.bind(this);
+	}
+	checkNews(){
+		const {isFetching,isFetched,data} = this.props.news;
+		if(isFetching){
+			return <Text>Loading....</Text>
+		}
+		else{
+			if(isFetched){
+				return <Text>Data Fetched</Text>;
+			}
+			else{
+				return <Text>Choose a suitable tag!</Text>
+			}
+		}
+	}
 	render(){
-		console.log(this.props.news);
 		const {container} = styles;
 		return(
 			<View style={container}>
-				<Text>hey</Text>
+				{this.checkNews()}
 			</View>
 
 		);
