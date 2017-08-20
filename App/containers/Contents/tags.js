@@ -33,5 +33,10 @@ const styles =StyleSheet.create({
 	},
 })
 
+const mapDispatchToProps = (dispatch) =>{
+	return(
+		bindActionCreators({BnsNews,EntNews,HckrNews,IndNews,SptsNews,WldNews},dispatch)
+	);
+}
 
-export default connect(null,{BnsNews,EntNews,HckrNews,IndNews,SptsNews,WldNews})(Details);
+export default connect(null,mapDispatchToProps)(Details);
