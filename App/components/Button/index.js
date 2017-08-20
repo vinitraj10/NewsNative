@@ -24,11 +24,9 @@ const Button = (props) =>{
 			marginRight:5
 		}
 	});
-
 	const {buttonStyle,textStyle} = styles;
-
 	return(
-		<TouchableOpacity style={buttonStyle}>
+		<TouchableOpacity style={buttonStyle} onPress={props.method}>
 			<Text style={textStyle}>{props.title}</Text>
 		</TouchableOpacity>
 	);

@@ -1,11 +1,13 @@
 import React,{Component} from 'react';
-import { View,Text,StyleSheet } from 'react-native';
+import { View,Image,StyleSheet} from 'react-native';
 
 export default class Header extends Component{
 	render(){
 		return(
 			<View style={styles.container}>
-				<Text style={styles.brand}>NEWS</Text>
+				<Image
+					source={require('./img/newspaper.png')}
+				/>
 			</View>
 		)
 	}
@@ -15,7 +17,7 @@ const styles = StyleSheet.create({
 	container:{
 		justifyContent:'center',
 		alignItems:'center',
-		backgroundColor:'#e5e5e5',
+		backgroundColor:'#dbd7e0',
 		height:60,
 		elevation:4
 	},

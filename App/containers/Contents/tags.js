@@ -12,14 +12,14 @@ class Details extends Component{
 		return (
 			<Section>
 				<View style={tagsContainer}>
-					<Button title='Buisness' color='#5cb728'/>
-					<Button title='Entertainment' color='#2887b7'/>
-					<Button title='Hack' color='#e04545'/>
+					<Button title='Buisness' color='#5cb728' method={this.props.BnsNews}/>
+					<Button title='Entertainment' color='#2887b7' method={this.props.EntNews}/>
+					<Button title='Hack' color='#e04545' method={this.props.HckrNews}/>
 				</View>
 				<View style={tagsContainer}>
-					<Button title='Indian' color='#007aff'/>
-					<Button title='Sports' color='#cc336b'/>
-					<Button title='World' color='#bacc33'/>
+					<Button title='Indian' color='#007aff' method={this.props.IndNews}/>
+					<Button title='Sports' color='#cc336b' method={this.props.SptsNews}/>
+					<Button title='World' color='#bacc33' method={this.props.WldNews}/>
 				</View>
 			</Section>
 		);
