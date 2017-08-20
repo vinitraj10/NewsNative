@@ -4,11 +4,11 @@ import { AppRegistry,View,Text} from 'react-native';
 import {createStore,applyMiddleware} from 'redux';
 import {Provider} from 'react-redux';
 import ReduxThunk from 'redux-thunk';
-import rootReducer from './App/reducers';
+import rootReducer from './app/reducers';
 import {createLogger}  from 'redux-logger'
-import Header from './App/components/Header';
-import Details from './App/containers/tags';
-import News from './App/containers/news';
+import Header from './app/components/Header';
+import Details from './app/containers/tags';
+import News from './app/containers/news';
 
 const logger = createLogger({
     //empty options
