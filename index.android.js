@@ -1,5 +1,5 @@
 import React,{Component} from 'react';
-import { AppRegistry,View,Text} from 'react-native';
+import { AppRegistry,ScrollView,Text} from 'react-native';
 //redux-imports
 import {createStore,applyMiddleware} from 'redux';
 import {Provider} from 'react-redux';
@@ -19,11 +19,11 @@ export default class App extends Component{
   render(){
     return (
       <Provider store = {store(rootReducer)} >
-        <View>
+        <ScrollView>
           <Header/>
           <Details/>
           <News/>
-        </View>
+        </ScrollView>
       </Provider>
     );
   }
