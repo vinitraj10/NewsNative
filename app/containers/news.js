@@ -2,6 +2,7 @@ import React,{Component} from 'react';
 import {View,Text,StyleSheet} from 'react-native';
 import SingleNews from '../components/SingleNews';
 import {connect} from 'react-redux';
+import Data from './data.js';
 
 class News extends Component{
 	constructor(props) {
@@ -14,8 +15,10 @@ class News extends Component{
 			return <Text>Loading....</Text>
 		}
 		else{
+			const {data} = this.props.news;
+			//console.log(data);
 			if(isFetched){
-				return <Text>Data Fetched</Text>;
+				return <Data data={data}/>;
 			}
 			else{
 				return <Text>Choose a suitable tag!</Text>
