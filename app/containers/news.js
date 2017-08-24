@@ -1,5 +1,5 @@
 import React,{Component} from 'react';
-import {View,Text,StyleSheet} from 'react-native';
+import {ScrollView,Text,StyleSheet} from 'react-native';
 import SingleNews from '../components/SingleNews';
 import {connect} from 'react-redux';
 import Data from './data.js';
@@ -28,9 +28,9 @@ class News extends Component{
 	render(){
 		const {container} = styles;
 		return(
-			<View style={container}>
+			<ScrollView style={container}>
 				{this.checkNews()}
-			</View>
+			</ScrollView>
 
 		);
 	}
