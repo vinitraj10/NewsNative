@@ -1,30 +1,24 @@
 //importing Intialstate
-//import intialState from './intialState';
+import intialState from './intialState';
 
 //import action types
-import {FETCHING_NEWS_BNS}  from '../actions'; 
-import {FETCHED_NEWS_BNS}   from '../actions';
-import {FETCHING_NEWS_ENT}  from '../actions';
-import {FETCHED_NEWS_ENT}   from '../actions';
-import {FETCHING_NEWS_HCKR} from '../actions';
-import {FETCHED_NEWS_HCKR}  from '../actions';
-import {FETCHING_NEWS_IND}  from '../actions';
-import {FETCHED_NEWS_IND}   from '../actions';
-import {FETCHING_NEWS_SPTS} from '../actions';
-import {FETCHED_NEWS_SPTS}  from '../actions';
-import {FETCHING_NEWS_WLD}  from '../actions';
-import {FETCHED_NEWS_WLD}   from '../actions';
-
-const intialState = {
-	isFetching:false,
-	isFetched:false,
-	data:null,
-};
+import {FETCHING_NEWS_BNS}  from '../actions/types'; 
+import {FETCHED_NEWS_BNS}   from '../actions/types';
+import {FETCHING_NEWS_ENT}  from '../actions/types';
+import {FETCHED_NEWS_ENT}   from '../actions/types';
+import {FETCHING_NEWS_HCKR} from '../actions/types';
+import {FETCHED_NEWS_HCKR}  from '../actions/types';
+import {FETCHING_NEWS_IND}  from '../actions/types';
+import {FETCHED_NEWS_IND}   from '../actions/types';
+import {FETCHING_NEWS_SPTS} from '../actions/types';
+import {FETCHED_NEWS_SPTS}  from '../actions/types';
+import {FETCHING_NEWS_WLD}  from '../actions/types';
+import {FETCHED_NEWS_WLD}   from '../actions/types';
 
 export default function(state=intialState,action){
 	switch(action.type){
 		case FETCHING_NEWS_BNS:
-			return {...state,isFetching:true};
+			return {...state,isFetching:true,isFetched:false};
 			break;
 
 		case FETCHED_NEWS_BNS:
