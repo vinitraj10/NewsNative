@@ -5,13 +5,20 @@ class Data extends Component{
 	renderNews(article){
 		return(
 			<View style={styles.container} key={article.title}>
-				<View style={styles.childContainer}>
-					<Image 
-					style={styles.imgStyle}
-					source={{uri:article.urlToImage}}
-					/>
+				<View style={styles.titleContainer}>
+					<View style={styles.childContainer}>
+						<Image 
+						style={styles.imgStyle}
+						source={{uri:article.urlToImage}}
+						/>
+					</View>
+					<View style={styles.textContainer}>
+						<Text style={styles.textStyle}>{article.title}</Text>
+					</View>
 				</View>
-				<Text>{article.title}</Text>
+				<View style={styles.descContainer}>
+					<Text style={styles.detailStyle}>{article.description}</Text>
+				</View>
 			</View>
 		);	
 	}
@@ -26,8 +33,19 @@ class Data extends Component{
 }
 
 const styles = StyleSheet.create({
+	textStyle:{
+		fontSize:12
+	},
+	detailStyle:{
+		fontSize:14,
+	},
+	titleContainer:{
+		flexDirection:'row'
+	},
+	descContainer:{
+		flex:1,
+	},
 	container:{
-		flexDirection:'row',
 		margin:10,
 		padding:10,
 		borderColor:"#ddd",
@@ -43,6 +61,9 @@ const styles = StyleSheet.create({
 	imgStyle:{
 		width:50,
 		height:50
+	},
+	textContainer:{
+		flex:1
 	}
 });
 
