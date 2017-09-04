@@ -5,3 +5,5 @@ framework for building native mobile apps,It uses <code>React with Redux</code> 
 # Android
 
 <img src="screenshots/01.png?raw=true" width="270"> <img src="screenshots/02.png?raw=true" width="270"> <img src="screenshots/03.png?raw=true" width="270">
+<img src="screenshots/04.png?raw=true" width="270"> <img src="screenshots/05.png?raw=true" width="270"> <img src="screenshots/06.png?raw=true" width="270">
+<img src="screenshots/07.png?raw=true" width="270">
